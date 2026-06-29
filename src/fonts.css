@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'Mynerve';
+    src: url('./assets/fonts/Mynerve-Regular.woff2') format('woff2'),
+        url('./assets/fonts/Mynerve-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inria Sans';
+    src: url('./assets/fonts/InriaSans-Bold.woff2') format('woff2'),
+        url('./assets/fonts/InriaSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inria Sans';
+    src: url('./assets/fonts/InriaSans-BoldItalic.woff2') format('woff2'),
+        url('./assets/fonts/InriaSans-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inria Sans';
+    src: url('./assets/fonts/InriaSans-Italic.woff2') format('woff2'),
+        url('./assets/fonts/InriaSans-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inria Sans';
+    src: url('./assets/fonts/InriaSans-Light.woff2') format('woff2'),
+        url('./assets/fonts/InriaSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inria Sans';
+    src: url('./assets/fonts/InriaSans-LightItalic.woff2') format('woff2'),
+        url('./assets/fonts/InriaSans-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inria Sans';
+    src: url('./assets/fonts/InriaSans-Regular.woff2') format('woff2'),
+        url('./assets/fonts/InriaSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Baskervville';
+    src: url('./assets/fonts/Baskervville-Bold.woff2') format('woff2'),
+        url('./assets/fonts/Baskervville-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Baskervville';
+    src: url('./assets/fonts/Baskervville-BoldItalic.woff2') format('woff2'),
+        url('./assets/fonts/Baskervville-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Baskervville';
+    src: url('./assets/fonts/Baskervville-Italic.woff2') format('woff2'),
+        url('./assets/fonts/Baskervville-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Baskervville';
+    src: url('./assets/fonts/Baskervville-Medium.woff2') format('woff2'),
+        url('./assets/fonts/Baskervville-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Baskervville';
+    src: url('./assets/fonts/Baskervville-MediumItalic.woff2') format('woff2'),
+        url('./assets/fonts/Baskervville-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Baskervville';
+    src: url('./assets/fonts/Baskervville-Regular.woff2') format('woff2'),
+        url('./assets/fonts/Baskervville-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Baskervville';
+    src: url('./assets/fonts/Baskervville-SemiBold.woff2') format('woff2'),
+        url('./assets/fonts/Baskervville-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Baskervville';
+    src: url('./assets/fonts/Baskervville-SemiBoldItalic.woff2') format('woff2'),
+        url('./assets/fonts/Baskervville-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
