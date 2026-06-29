@@ -1,0 +1,101 @@
+.footer-container {
+    width: 100%;
+    background-color: var(--navyBlue);
+    padding: 80px 0 60px 0;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2; /* Render on top of the fixed ribbon */
+    display: flex;
+    justify-content: center;
+    border-top: 2px dashed rgba(244, 247, 245, 0.15);
+}
+
+.footer-content {
+    width: 80vw;
+    margin-right: 2.5vw; /* Align with .item-field */
+    padding-left: 200px; /* Align with .dotted-box content */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer-container .links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: flex-start;
+}
+
+.link-set {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+    min-width: 180px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    background-color: rgba(244, 247, 245, 0.04);
+    color: var(--snow);
+    transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.lucide-mail {
+    color: var(--snow);
+}
+
+.link-set:hover .icon {
+    background-color: rgba(159, 43, 69, 0.15); /* Subtle rose tint on hover */
+    transform: translateY(-4px);
+}
+
+.link-title {
+    font-family: 'Inria Sans';
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: rgba(244, 247, 245, 0.4);
+    margin-top: 2px;
+}
+
+.link-set a {
+    font-family: 'Inria Sans';
+    font-size: 16px;
+    margin-left: 0; /* Reset margins */
+    padding: 4px 8px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid rgba(244, 247, 245, 0.08);
+    padding-top: 30px;
+}
+
+.copyright {
+    font-family: 'Inria Sans';
+    font-weight: 300;
+    font-size: 14px;
+    color: rgba(244, 247, 245, 0.45);
+    margin: 0;
+}
+
+.copyright a {
+    margin-left: 4px;
+    font-weight: normal;
+    padding: 2px 6px;
+}
