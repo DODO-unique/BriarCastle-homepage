@@ -1,0 +1,42 @@
+.heading {
+    /* border-style: solid;
+    border-color: var(--rose);
+    border-width: 1px; */
+
+    /* this height is fixed because the hero page would occupy the entire viewport initially */
+    height: 100vh;
+    user-select: none;
+}
+
+.heading > h1 {
+    margin: 0;
+    position: absolute;
+    font-size: 31vh;
+    font-weight: normal;
+    color: var(--snow);
+    font-family: 'Baskervville';
+}
+
+.heading .heading-Briar {
+    margin-left: 1.5vw;
+}
+
+.heading .heading-Castle {
+    margin-left: 7.5vw;
+    margin-top: 0.95em;
+    z-index: -1;
+}
+
+
+.heading-credit {
+    /* positioning */
+    position: absolute;
+    margin-top: 68vh;
+    margin-left: 17vw;
+
+    /* styling */
+    font-family: 'Inria Sans';
+    font-weight: 300;
+    font-size: 20px;
+    color: var(--snow);
+}
