@@ -49,7 +49,7 @@ body {
     /* Using cards-gap for vertical offset (already clamped). */
     --content-vertical-offset: var(--cards-gap);
     /* content vertical margin: min 40px @800px, max 245px @1440px (Figma-derived) */
-    --content-vertical-margin: clamp(2.500rem, 32.031vw - 13.516rem, 15.312rem);
+    --content-vertical-margin: clamp(2.500rem, 21.094vw - 8.047rem, 10.938rem);
 
     /* Card height token (largest card height from Figma) */
     /* card min-height: clamp between 800px and 1440px designs */
@@ -62,7 +62,7 @@ body {
     /* Vertical gap between stacked cards approximated from Figma */
     /* vertical gap between stacked cards: clamp between 800px and 1440px designs */
     /* min: 272px @800px (distance from top of Laboratory to top of Garden in node 131:78/84), max: 374px @1440px (distance in node 115:2) */
-    --cards-gap: clamp(5.938rem, 5.469vw - -3.203rem, 8.125rem);
+    --cards-gap: clamp(4.375rem, 9.375vw - 0.312rem, 8.125rem);
 
     /* min/max values used for this clamp: 272px (800px node), 374px (1440px node) */
 }
