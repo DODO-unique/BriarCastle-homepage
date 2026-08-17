@@ -8,7 +8,7 @@
     user-select: none;
 }
 
-.heading > h1 {
+.heading h1 {
     margin: 0;
     position: absolute;
     /* Use tokenized hero size (clamped between 800px and 1440px) */
@@ -16,6 +16,7 @@
     font-weight: normal;
     color: var(--snow);
     font-family: 'Baskervville';
+    animation: hero-fade-float-in 1.5s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 .heading .heading-Briar {
@@ -26,6 +27,7 @@
     margin-left: 7.5vw;
     margin-top: 0.95em;
     z-index: -1;
+    animation-delay: 120ms;
 }
 
 
@@ -40,4 +42,50 @@
     font-weight: 300;
     font-size: var(--type-meta);
     color: var(--snow);
+    animation: hero-fade-float-in 1s cubic-bezier(0.22, 1, 0.36, 1) 0.5s both;
+}
+
+@keyframes hero-fade-float-in {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .heading h1,
+    .heading-credit {
+        animation: none;
+    }
+}
+
+@media (max-width: 799px) {
+    .heading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .heading-Castle {
+        position: relative;
+        }
+    }
+
+    .heading-credit {
+        position: relative;
+        top: 0;
+        left: var(--ribbon-x);
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .heading-block {
+        height: auto;
+        width: auto;
+        border: 10px red;
+    }
 }

@@ -17,6 +17,17 @@
     left: var(--ribbon-x);
     top: 0;
     z-index: 0;
+    transform-origin: top;
+    animation: swipe-down 2s ease-out;
+}
+
+@keyframes swipe-down {
+    from {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(1);
+    }
 }
 
 /* Link helpers remain unchanged */
