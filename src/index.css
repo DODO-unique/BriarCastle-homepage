@@ -21,11 +21,11 @@ body {
 
     /* Ribbon placement inside the canvas */
     /* ribbon x-position relative to canvas: clamp between 800px and 1440px designs */
-    /* min: 146px @800px (Figma node 131:96), max: 270px @1440px (committed value) */
-    --ribbon-x: clamp(9.125rem, 19.375vw - 0.562rem, 16.875rem);
+    /* min: 146px @800px (Figma node 131:96), max: 205px @1440px (committed value) */
+    --ribbon-x: clamp(9.125rem, 9.219vw - -4.516rem, 12.812rem);
     /* ribbon width: clamp between 800px and 1440px designs */
-    /* min: 2px @800px (approx from Figma node), max: 10px (committed value) */
-    --ribbon-width: clamp(0.125rem, 1.250vw - 0.500rem, 0.625rem);
+    /* min: 5px @800px (approx from Figma node), max: 10px (committed value) */
+    --ribbon-width: clamp(0.312rem, 0.781vw - 0.078rem, 0.625rem);
 
     /* Typography tokens (exact Figma values) */
     /* hero display type size: clamp between 800px and 1440px designs */
@@ -57,12 +57,12 @@ body {
     --card-height: clamp(11.062rem, 10.469vw - -5.828rem, 15.250rem); /* min: 177px @800px, max: 244px @1440px */
 
     /* subtitle to ribbon minimum gap: clamp between 179px (800px node) and 280px (1440px) */
-    --subtitle-ribbon-gap: clamp(11.188rem, 15.781vw - -3.297rem, 17.500rem);
+    --subtitle-ribbon-gap: clamp(3.375rem, 6.250vw - -0.250rem, 5.875rem);
 
     /* Vertical gap between stacked cards approximated from Figma */
     /* vertical gap between stacked cards: clamp between 800px and 1440px designs */
     /* min: 272px @800px (distance from top of Laboratory to top of Garden in node 131:78/84), max: 374px @1440px (distance in node 115:2) */
-    --cards-gap: clamp(17.000rem, 15.937vw - -9.031rem, 23.375rem);
+    --cards-gap: clamp(5.938rem, 5.469vw - -3.203rem, 8.125rem);
 
     /* min/max values used for this clamp: 272px (800px node), 374px (1440px node) */
 }

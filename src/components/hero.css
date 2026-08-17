@@ -32,9 +32,10 @@
 .heading-credit {
     /* positioning: keep top fixed but ensure minimum left offset from the ribbon using the subtitle-ribbon-gap token */
     position: absolute;
-    top: 68vh;
+    top: calc(2.25 * var(--type-hero));
     left: calc(var(--ribbon-x) + var(--subtitle-ribbon-gap));
-n    /* styling */
+
+    /* styling */
     font-family: 'Inria Sans';
     font-weight: 300;
     font-size: var(--type-meta);
