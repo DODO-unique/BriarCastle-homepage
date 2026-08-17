@@ -11,7 +11,8 @@
 .heading > h1 {
     margin: 0;
     position: absolute;
-    font-size: 31vh;
+    /* Use tokenized hero size (clamped between 800px and 1440px) */
+    font-size: var(--type-hero);
     font-weight: normal;
     color: var(--snow);
     font-family: 'Baskervville';
@@ -29,14 +30,13 @@
 
 
 .heading-credit {
-    /* positioning */
+    /* positioning: keep top fixed but ensure minimum left offset from the ribbon using the subtitle-ribbon-gap token */
     position: absolute;
-    margin-top: 68vh;
-    margin-left: 17vw;
-
-    /* styling */
+    top: 68vh;
+    left: calc(var(--ribbon-x) + var(--subtitle-ribbon-gap));
+n    /* styling */
     font-family: 'Inria Sans';
     font-weight: 300;
-    font-size: 20px;
+    font-size: var(--type-meta);
     color: var(--snow);
 }
