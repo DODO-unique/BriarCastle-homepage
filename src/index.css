@@ -21,11 +21,11 @@ body {
 
     /* Ribbon placement inside the canvas */
     /* ribbon x-position relative to canvas: clamp between 800px and 1440px designs */
-    /* min: 146px @800px (Figma node 131:96), max: 270px @1440px (committed value) */
-    --ribbon-x: clamp(9.125rem, 19.375vw - 0.562rem, 16.875rem);
+    /* min: 146px @800px (Figma node 131:96), max: 205px @1440px (committed value) */
+    --ribbon-x: clamp(9.125rem, 9.219vw - -4.516rem, 12.812rem);
     /* ribbon width: clamp between 800px and 1440px designs */
-    /* min: 2px @800px (approx from Figma node), max: 10px (committed value) */
-    --ribbon-width: clamp(0.125rem, 1.250vw - 0.500rem, 0.625rem);
+    /* min: 5px @800px (approx from Figma node), max: 10px (committed value) */
+    --ribbon-width: clamp(0.312rem, 0.781vw - 0.078rem, 0.625rem);
 
     /* Typography tokens (exact Figma values) */
     /* hero display type size: clamp between 800px and 1440px designs */
@@ -49,7 +49,7 @@ body {
     /* Using cards-gap for vertical offset (already clamped). */
     --content-vertical-offset: var(--cards-gap);
     /* content vertical margin: min 40px @800px, max 245px @1440px (Figma-derived) */
-    --content-vertical-margin: clamp(2.500rem, 32.031vw - 13.516rem, 15.312rem);
+    --content-vertical-margin: clamp(2.500rem, 21.094vw - 8.047rem, 10.938rem);
 
     /* Card height token (largest card height from Figma) */
     /* card min-height: clamp between 800px and 1440px designs */
@@ -57,12 +57,57 @@ body {
     --card-height: clamp(11.062rem, 10.469vw - -5.828rem, 15.250rem); /* min: 177px @800px, max: 244px @1440px */
 
     /* subtitle to ribbon minimum gap: clamp between 179px (800px node) and 280px (1440px) */
-    --subtitle-ribbon-gap: clamp(11.188rem, 15.781vw - -3.297rem, 17.500rem);
+    --subtitle-ribbon-gap: clamp(3.375rem, 6.250vw - -0.250rem, 5.875rem);
 
     /* Vertical gap between stacked cards approximated from Figma */
     /* vertical gap between stacked cards: clamp between 800px and 1440px designs */
     /* min: 272px @800px (distance from top of Laboratory to top of Garden in node 131:78/84), max: 374px @1440px (distance in node 115:2) */
-    --cards-gap: clamp(17.000rem, 15.937vw - -9.031rem, 23.375rem);
+    --cards-gap: clamp(4.375rem, 9.375vw - 0.312rem, 8.125rem);
 
     /* min/max values used for this clamp: 272px (800px node), 374px (1440px node) */
+}
+
+/* Media overrides for narrower devices using Figma frames (799px and 390px)
+   - These override the token values below the specified breakpoints so layout matches
+     the Figma frames exactly at those sizes.
+   - Values are taken from Figma nodes 138:101 (approx 799px frame) and 138:128 (390px frame).
+*/
+
+@media (max-width: 799px) {
+  :root {
+    --content-width: 516.696px; /* Figma: w=516.696 @138:112 */
+    --offset-left: 141px; /* Figma: left=141 @138:110 */
+    --content-inner-left: 96px; /* computed: text left 237.35 - content left 141 = 96.35 */
+    --ribbon-x: 207px; /* Figma: ribbon left=207 @138:108 */
+    --ribbon-width: 1.717px; /* Figma: ribbon width ~1.717px @138:108 */
+
+    --type-hero: 175px; /* Figma: hero text 175px @138:103 */
+    --type-heading-lg: 36px; /* Figma: card title 36px @138:114/119/125 */
+    --type-body-lg: 16px; /* Figma: card body 16px */
+    --type-meta: 16px; /* Figma: meta text 16px */
+
+    --card-height: 161.315px; /* largest card height @138:112 */
+    --cards-gap: 248px; /* approx gap from lab top 967 → garden top 1215.08 */
+  }
+}
+
+@media (max-width: 390px) {
+  :root {
+    --content-width: 229.956px; /* Figma: w=229.956 @138:156 */
+    --offset-left: 79px; /* Figma: left=79 @138:154 */
+    --content-inner-left: 43px; /* computed: text left 121.88 - content left 79 = 42.88 */
+    --ribbon-x: 110px; /* Figma: ribbon left=110 @138:172 */
+    --ribbon-width: 1.717px; /* Figma: ribbon width ~1.717px */
+
+    --type-hero: 96px; /* Figma: hero text 96px @138:174/175 */
+    --type-heading-lg: 16px; /* Figma: card title 16px @138:158/163/169 */
+    --type-body-lg: 10px; /* Figma: card body 10px @138:159/164/170 */
+    --type-meta: 13px; /* Figma: subtitle meta 13px @138:173 */
+
+    --card-height: 127px; /* Figma: card height 127px @138:156/162/167 */
+    --cards-gap: 248px; /* Figma: gap from lab top 916 → garden top 1164.08 */
+
+    /* ensure subtitle-ribbon-gap has sensible minimum on smallest screens */
+    --subtitle-ribbon-gap: 96px; /* chosen min so subtitle doesn't overlap ribbon on narrow screens */
+  }
 }
