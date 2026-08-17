@@ -12,12 +12,12 @@ body {
 
     /* Design tokens for 1440px canvas parity (Figma Desktop - 2 node) */
     --canvas-max-width: 1440px;
-    --content-width: 1086.5167px; /* exact Figma content width */
+    --content-width: 1087px; /* exact Figma content width */
     --offset-left: 180px; /* content left offset in Figma */
 
     /* Ribbon placement inside the canvas */
-    --ribbon-x: 257px; /* Figma ribbon x-position */
-    --ribbon-width: 3px; /* Figma ribbon width */
+    --ribbon-x: 270px; /* Figma ribbon x-position */
+    --ribbon-width: 10px; /* Figma ribbon width */
 
     /* Typography tokens (exact Figma values) */
     --type-hero: 250px;
@@ -26,10 +26,12 @@ body {
     --type-meta: 20px;
 
     /* Inner content left padding (text inside the content column) */
-    --content-inner-left: 154.8143615722656px;
+    --content-inner-left: 155px;
+    --content-vertical-offset: var(--cards-gap);
+    --content-vertical-margin: 50px;
 
     /* Card height token (largest card height from Figma) */
-    --card-height: 243.518px;
+    --card-height: 244px;
 
     /* Vertical gap between stacked cards approximated from Figma */
     --cards-gap: 131px;

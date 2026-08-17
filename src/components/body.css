@@ -8,7 +8,8 @@
     align-items: start;
     
     width: var(--content-width);
-    margin: 0 auto; /* center the content column inside the canvas-viewport */
+    margin: var(--content-vertical-margin) auto; /* center the content column inside the canvas-viewport */
+    padding: var(--content-vertical-offset) 0;
 }
 
 .item-field {
@@ -55,13 +56,13 @@
 .dotted-box-heading {
     font-weight: normal;
     font-style: normal;
-    font-size: 64px;
+    font-size: var(--type-heading-lg);
     margin: 0;
     margin-top: 0.3em;
     margin-bottom: 0.8em;
 }
 
 .dotted-box-subHeading, .dotted-box-link{
-    font-size: 25px;
+    font-size: var(--type-body-lg);
 }
 
