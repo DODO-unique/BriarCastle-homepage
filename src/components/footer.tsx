@@ -1,3 +1,7 @@
+/*
+Original footer implementation and imports are commented out intentionally so the footer remains in the repository
+but is not used or rendered. To restore the footer, uncomment this block and remove the placeholder below.
+
 import invertocat from '../assets/GitHub_Invertocat_White_Clearspace.svg'
 import { Mail } from 'lucide-react'
 import linkedIn from '../assets/InBug-White.png'
@@ -63,4 +67,10 @@ export default function Footer () {
             </div>
         </footer>
     )
+}
+*/
+
+// Footer disabled: exported placeholder component returns null so the code stays but the footer is not rendered.
+export default function Footer() {
+    return null;
 }
