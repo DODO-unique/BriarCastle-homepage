@@ -1,3 +1,6 @@
+/* Footer styles commented out to make the footer irrelevant to design.
+   To restore the footer styles, remove the comment block below. */
+/*
 .footer-container {
     width: 100%;
     background-color: var(--navyBlue);
@@ -99,3 +102,4 @@
     font-weight: normal;
     padding: 2px 6px;
 }
+*/
