@@ -7,7 +7,8 @@ import Body from './components/body';
 
 export default function App () {
     return (
-        <div>
+        <div className="canvas-viewport">
+            {/* Ribbon is placed inside the canvas-viewport so it is positioned relative to the canvas and will not leak outside when the canvas grows */}
             <div className="ribbon" />
             <Hero />
             <Header />

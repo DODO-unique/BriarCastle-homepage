@@ -1,11 +1,59 @@
+/* Canvas viewport — constrains the visual canvas to the Figma-width and centers it */
+.canvas-viewport {
+    width: 100%;
+    max-width: var(--canvas-max-width);
+    margin: 0 auto;
+    position: relative; /* required so children with absolute positioning (ribbon) are positioned relative to the canvas */
+    box-sizing: border-box;
+}
+
+/* Ribbon positioned relative to the canvas viewport using the tokenized offset */
 .ribbon {
     margin: 0;
     background-color: var(--rose);
-    height: 100vh;
-    width: 0.5vw;
-    margin-left: 13vw;
-    position: fixed;
+    height: 100%;
+    width: var(--ribbon-width);
+    position: absolute; /* position inside the canvas */
+    left: var(--ribbon-x);
+    top: 0;
     z-index: 0;
+}
+
+/* Link helpers remain unchanged */
+a {
+    position: relative;
+    text-decoration: none;
+    margin-left: 5px;
+    color: var(--rose);
+    border-radius: 5px;
+    padding: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    min-width: fit-content;
+    transition: color 0.5s ease;
+}
+
+a::before {
+    content: "";
+    position: absolute;
+    background-color: var(--rose);
+
+
+    left: 0;
+
+    height: 100%;
+    width: 0%;
+    z-index: -1;
+
+    transition: width 0.5s ease;
+}
+
+a:hover::before {
+    width: 100%;
+}
+
+a:hover {
+    color: var(--navyBlue)
 }
 
 a {
