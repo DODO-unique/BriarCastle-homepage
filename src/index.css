@@ -45,16 +45,24 @@ body {
     /* content inner left padding: clamp between 800px and 1440px designs */
     /* min: 113px @800px (computed: text left 202 - content left 89), max: 155px @1440px (committed value) */
     --content-inner-left: clamp(7.062rem, 6.562vw - -3.781rem, 9.688rem);
+    /* vertical spacing between content and neighbors (clamped between 800px and 1440px) */
+    /* Using cards-gap for vertical offset (already clamped). */
     --content-vertical-offset: var(--cards-gap);
-    --content-vertical-margin: 50px;
+    /* content vertical margin: min 40px @800px, max 245px @1440px (Figma-derived) */
+    --content-vertical-margin: clamp(2.500rem, 32.031vw - 13.516rem, 15.312rem);
 
     /* Card height token (largest card height from Figma) */
     /* card min-height: clamp between 800px and 1440px designs */
     /* min: 177px @800px (largest card height from node 131:80/85/90), max: 244px @1440px (committed value) */
-    --card-height: clamp(11.062rem, 10.469vw - -5.828rem, 15.250rem);
+    --card-height: clamp(11.062rem, 10.469vw - -5.828rem, 15.250rem); /* min: 177px @800px, max: 244px @1440px */
+
+    /* subtitle to ribbon minimum gap: clamp between 179px (800px node) and 280px (1440px) */
+    --subtitle-ribbon-gap: clamp(11.188rem, 15.781vw - -3.297rem, 17.500rem);
 
     /* Vertical gap between stacked cards approximated from Figma */
     /* vertical gap between stacked cards: clamp between 800px and 1440px designs */
     /* min: 272px @800px (distance from top of Laboratory to top of Garden in node 131:78/84), max: 374px @1440px (distance in node 115:2) */
     --cards-gap: clamp(17.000rem, 15.937vw - -9.031rem, 23.375rem);
+
+    /* min/max values used for this clamp: 272px (800px node), 374px (1440px node) */
 }
